@@ -1,10 +1,11 @@
+import path from 'node:path'
+
 import { defineConfig } from 'vitest/config'
 
 export default defineConfig({
   resolve: {
     alias: {
-      'eslint-import-context': new URL('src/index.ts', import.meta.url)
-        .pathname,
+      'eslint-import-context': path.resolve(__dirname, 'src/index.ts'),
     },
   },
   test: {
