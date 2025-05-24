@@ -73,11 +73,19 @@ export type LegacyResolverResolve<T = unknown> = (
   config: T,
 ) => ResolvedResult
 
-export interface LegacyResolver<T = unknown, U = T> {
-  interfaceVersion?: 1 | 2
-  resolve?: LegacyResolverResolve<T>
-  resolveImport?: LegacyResolverResolveImport<U>
+export interface LegacyResolverV1<T> {
+  interfaceVersion?: 1
+  resolveImport: LegacyResolverResolveImport<T>
 }
+
+export interface LegacyResolverV2<T> {
+  interfaceVersion: 2
+  resolve: LegacyResolverResolve<T>
+}
+
+export type LegacyResolver<T = unknown, U = T> =
+  | LegacyResolverV1<U>
+  | LegacyResolverV2<T>
 
 export interface LegacyResolverObjectBase {
   // node, typescript, webpack...
