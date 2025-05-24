@@ -1,0 +1,9 @@
+{
+  "extends": "..",
+  "compilerOptions": {
+    "composite": true,
+    "rootDir": ".",
+    "outDir": "../lib"
+  },
+  "include": ["."]
+}

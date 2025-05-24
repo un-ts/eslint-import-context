@@ -1,0 +1,9 @@
+{
+  // https://github.com/dominikg/tsconfck/issues/220
+  "extends": "./tsconfig.json",
+  "compilerOptions": {
+    "paths": {
+      "lib-boilerplate": ["./src/index.ts"]
+    }
+  }
+}
