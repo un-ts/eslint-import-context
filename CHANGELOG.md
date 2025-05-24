@@ -1,5 +1,11 @@
 # Change Log
 
+## 0.1.1
+
+### Patch Changes
+
+- [#4](https://github.com/un-ts/eslint-import-context/pull/4) [`085b227`](https://github.com/un-ts/eslint-import-context/commit/085b227917a263282dae2c50f7f70caba33674ec) Thanks [@JounQin](https://github.com/JounQin)! - fix: known types issue
+
 ## 0.1.0
 
 ### Minor Changes
