@@ -3,7 +3,7 @@
   "extends": "./tsconfig.json",
   "compilerOptions": {
     "paths": {
-      "lib-boilerplate": ["./src/index.ts"]
+      "eslint-import-context": ["./src/index.ts"]
     }
   }
 }

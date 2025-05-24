@@ -4163,37 +4163,12 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@size-limit/esbuild@npm:11.2.0":
-  version: 11.2.0
-  resolution: "@size-limit/esbuild@npm:11.2.0"
-  dependencies:
-    esbuild: "npm:^0.25.0"
-    nanoid: "npm:^5.1.0"
-  peerDependencies:
-    size-limit: 11.2.0
-  checksum: 10c0/8740fd6f86d0be14bd7492781a9611f12fdbeafefa590ed485ce4f1768b521da8847c5ab314253bd0bb6decb50b5b5fe8f3cba7adc5cc9e55ebccbad6a161df3
-  languageName: node
-  linkType: hard
-
-"@size-limit/file@npm:11.2.0":
+"@size-limit/file@npm:^11.2.0":
   version: 11.2.0
   resolution: "@size-limit/file@npm:11.2.0"
   peerDependencies:
     size-limit: 11.2.0
   checksum: 10c0/25fb431c2afa9293774842f3abb12ee0aaa988585a2be545f2a4f90ffd5c638a13bada10a0b71e376cefb426bd991793d0e1ffe970b94a4e0bb8b0a8b504f343
-  languageName: node
-  linkType: hard
-
-"@size-limit/preset-small-lib@npm:^11.2.0":
-  version: 11.2.0
-  resolution: "@size-limit/preset-small-lib@npm:11.2.0"
-  dependencies:
-    "@size-limit/esbuild": "npm:11.2.0"
-    "@size-limit/file": "npm:11.2.0"
-    size-limit: "npm:11.2.0"
-  peerDependencies:
-    size-limit: 11.2.0
-  checksum: 10c0/3b1f55fde435794d83245687bc4e2e6996ddb178c774af62b57754e9b7d6ea1db3ef041f0706bd1ffb45da2fa52eba50594ce92ab312637e4198ee06274de673
   languageName: node
   linkType: hard
 
@@ -7509,6 +7484,55 @@ __metadata:
   languageName: node
   linkType: hard
 
+"eslint-import-context@workspace:.":
+  version: 0.0.0-use.local
+  resolution: "eslint-import-context@workspace:."
+  dependencies:
+    "@1stg/browserslist-config": "npm:^2.1.4"
+    "@1stg/common-config": "npm:^14.0.0"
+    "@1stg/postcss-config": "npm:^6.0.6"
+    "@1stg/stylelint-config": "npm:^6.0.5"
+    "@changesets/changelog-github": "npm:^0.5.1"
+    "@changesets/cli": "npm:^2.29.4"
+    "@commitlint/cli": "npm:^19.8.1"
+    "@eslint-react/eslint-plugin": "npm:^1.49.0"
+    "@mdx-js/rollup": "npm:^3.1.0"
+    "@shikijs/rehype": "npm:^3.4.2"
+    "@types/mdx": "npm:^2.0.13"
+    "@types/node": "npm:^22.15.21"
+    "@types/react": "npm:^19.1.5"
+    "@types/react-dom": "npm:^19.1.5"
+    "@types/web": "npm:^0.0.235"
+    "@vercel/analytics": "npm:^1.5.0"
+    "@vitejs/plugin-react-swc": "npm:^3.9.0"
+    "@vitest/coverage-v8": "npm:^3.1.4"
+    "@vitest/eslint-plugin": "npm:^1.2.0"
+    clean-pkg-json: "npm:^1.3.0"
+    eslint: "npm:^9.27.0"
+    eslint-plugin-react-hooks: "npm:^5.2.0"
+    github-markdown-css: "npm:^5.8.1"
+    nano-staged: "npm:^0.8.0"
+    npm-run-all2: "npm:^8.0.3"
+    premove: "npm:^4.0.0"
+    prettier: "npm:^3.5.3"
+    react: "npm:^19.1.0"
+    react-dom: "npm:^19.1.0"
+    react-router-dom: "npm:^7.6.0"
+    rehype-slug: "npm:^6.0.0"
+    remark-gfm: "npm:^4.0.1"
+    simple-git-hooks: "npm:^2.13.0"
+    size-limit: "npm:^11.2.0"
+    size-limit-preset-node-lib: "npm:^0.4.0"
+    stylelint: "npm:^16.19.1"
+    tsdown: "npm:^0.12.2"
+    type-coverage: "npm:^2.29.7"
+    typescript: "npm:^5.8.3"
+    vite: "npm:^6.3.5"
+    vitest: "npm:^3.1.4"
+    yarn-berry-deduplicate: "npm:^6.1.3"
+  languageName: unknown
+  linkType: soft
+
 "eslint-import-resolver-node@npm:^0.3.9":
   version: 0.3.9
   resolution: "eslint-import-resolver-node@npm:0.3.9"
@@ -10196,55 +10220,6 @@ __metadata:
   languageName: node
   linkType: hard
 
-"lib-boilerplate@workspace:.":
-  version: 0.0.0-use.local
-  resolution: "lib-boilerplate@workspace:."
-  dependencies:
-    "@1stg/browserslist-config": "npm:^2.1.4"
-    "@1stg/common-config": "npm:^14.0.0"
-    "@1stg/postcss-config": "npm:^6.0.6"
-    "@1stg/stylelint-config": "npm:^6.0.5"
-    "@changesets/changelog-github": "npm:^0.5.1"
-    "@changesets/cli": "npm:^2.29.4"
-    "@commitlint/cli": "npm:^19.8.1"
-    "@eslint-react/eslint-plugin": "npm:^1.49.0"
-    "@mdx-js/rollup": "npm:^3.1.0"
-    "@shikijs/rehype": "npm:^3.4.2"
-    "@size-limit/preset-small-lib": "npm:^11.2.0"
-    "@types/mdx": "npm:^2.0.13"
-    "@types/node": "npm:^22.15.21"
-    "@types/react": "npm:^19.1.5"
-    "@types/react-dom": "npm:^19.1.5"
-    "@types/web": "npm:^0.0.235"
-    "@vercel/analytics": "npm:^1.5.0"
-    "@vitejs/plugin-react-swc": "npm:^3.9.0"
-    "@vitest/coverage-v8": "npm:^3.1.4"
-    "@vitest/eslint-plugin": "npm:^1.2.0"
-    clean-pkg-json: "npm:^1.3.0"
-    eslint: "npm:^9.27.0"
-    eslint-plugin-react-hooks: "npm:^5.2.0"
-    github-markdown-css: "npm:^5.8.1"
-    nano-staged: "npm:^0.8.0"
-    npm-run-all2: "npm:^8.0.3"
-    premove: "npm:^4.0.0"
-    prettier: "npm:^3.5.3"
-    react: "npm:^19.1.0"
-    react-dom: "npm:^19.1.0"
-    react-router-dom: "npm:^7.6.0"
-    rehype-slug: "npm:^6.0.0"
-    remark-gfm: "npm:^4.0.1"
-    simple-git-hooks: "npm:^2.13.0"
-    size-limit: "npm:^11.2.0"
-    stylelint: "npm:^16.19.1"
-    tsdown: "npm:^0.12.2"
-    type-coverage: "npm:^2.29.7"
-    typescript: "npm:^5.8.3"
-    vite: "npm:^6.3.5"
-    vitest: "npm:^3.1.4"
-    yarn-berry-deduplicate: "npm:^6.1.3"
-  languageName: unknown
-  linkType: soft
-
 "lilconfig@npm:^3.1.3":
   version: 3.1.3
   resolution: "lilconfig@npm:3.1.3"
@@ -11706,7 +11681,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"nanoid@npm:^5.1.0":
+"nanoid@npm:^5.1.5":
   version: 5.1.5
   resolution: "nanoid@npm:5.1.5"
   bin:
@@ -15389,7 +15364,31 @@ __metadata:
   languageName: node
   linkType: hard
 
-"size-limit@npm:11.2.0, size-limit@npm:^11.2.0":
+"size-limit-node-esbuild@npm:^0.4.0":
+  version: 0.4.0
+  resolution: "size-limit-node-esbuild@npm:0.4.0"
+  dependencies:
+    nanoid: "npm:^5.1.5"
+    size-limit: "npm:^11.2.0"
+    tslib: "npm:^2.8.1"
+  checksum: 10c0/48d5619db81dc0dc6f999c2c725fece528efd6d127c8c9385ca01dcafce6713e209c09186a9e878b8a0f027de29a9651510b6129ad70d12082517b17c162a138
+  languageName: node
+  linkType: hard
+
+"size-limit-preset-node-lib@npm:^0.4.0":
+  version: 0.4.0
+  resolution: "size-limit-preset-node-lib@npm:0.4.0"
+  dependencies:
+    "@size-limit/file": "npm:^11.2.0"
+    size-limit-node-esbuild: "npm:^0.4.0"
+    tslib: "npm:^2.8.1"
+  peerDependencies:
+    size-limit: ^11.0.0
+  checksum: 10c0/bce77f07cbe51220284dc9ad8caf9c56e3315a18d7fa1def9efca63e4118965c53d9a9c9c53c26c6860bbfb89ce2f5193b8d82c0461558080f9ce97705c53f18
+  languageName: node
+  linkType: hard
+
+"size-limit@npm:^11.2.0":
   version: 11.2.0
   resolution: "size-limit@npm:11.2.0"
   dependencies:
