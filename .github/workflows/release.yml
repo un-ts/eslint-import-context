@@ -37,8 +37,8 @@ jobs:
       - name: Create Release Pull Request or Publish to npm
         uses: changesets/action@v1
         with:
-          commit: 'chore: release lib-boilerplate'
-          title: 'chore: release lib-boilerplate'
+          commit: 'chore: release eslint-import-context'
+          title: 'chore: release eslint-import-context'
           version: yarn run version
           publish: yarn release
         env:
