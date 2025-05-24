@@ -1,5 +1,11 @@
 # Change Log
 
+## 0.1.3
+
+### Patch Changes
+
+- [#8](https://github.com/un-ts/eslint-import-context/pull/8) [`080209e`](https://github.com/un-ts/eslint-import-context/commit/080209e3aa0fad3b21a7bc57c47ecb2da267e964) Thanks [@JounQin](https://github.com/JounQin)! - fix: stick on `type: commonjs` to ensure only one entry
+
 ## 0.1.2
 
 ### Patch Changes
