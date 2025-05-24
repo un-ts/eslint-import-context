@@ -1,5 +1,11 @@
 # Change Log
 
+## 0.1.2
+
+### Patch Changes
+
+- [#6](https://github.com/un-ts/eslint-import-context/pull/6) [`02b3e24`](https://github.com/un-ts/eslint-import-context/commit/02b3e247ea73219db97736566e4f425878aa1072) Thanks [@JounQin](https://github.com/JounQin)! - fix: `LegacyResolver` typing
+
 ## 0.1.1
 
 ### Patch Changes
