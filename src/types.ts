@@ -75,11 +75,11 @@ export type LegacyResolverResolve<T = unknown> = (
 
 export interface LegacyResolver<T = unknown, U = T> {
   interfaceVersion?: 1 | 2
-  resolve: LegacyResolverResolve<T>
-  resolveImport: LegacyResolverResolveImport<U>
+  resolve?: LegacyResolverResolve<T>
+  resolveImport?: LegacyResolverResolveImport<U>
 }
 
-export interface LegacyResolverObject {
+export interface LegacyResolverObjectBase {
   // node, typescript, webpack...
   name: LegacyResolverName
 
@@ -87,16 +87,32 @@ export interface LegacyResolverObject {
   enable?: boolean
 
   // Options passed to the resolver
-  options?:
-    | NodeResolverOptions
-    | TsResolverOptions
-    | WebpackResolverOptions
-    // eslint-disable-next-line @typescript-eslint/no-empty-object-type
-    | {}
+  options?: unknown
 
   // Any object satisfied Resolver type
   resolver: LegacyResolver
 }
+
+export interface LegacyNodeResolverObject extends LegacyResolverObjectBase {
+  name: 'node'
+  options?: NodeResolverOptions | boolean
+}
+
+export interface LegacyTsResolverObject extends LegacyResolverObjectBase {
+  name: 'typescript'
+  options?: TsResolverOptions | boolean
+}
+
+export interface LegacyWebpackResolverObject extends LegacyResolverObjectBase {
+  name: 'webpack'
+  options?: WebpackResolverOptions | boolean
+}
+
+export type LegacyResolverObject =
+  | LegacyNodeResolverObject
+  | LegacyResolverObjectBase
+  | LegacyTsResolverObject
+  | LegacyWebpackResolverObject
 
 export interface LegacyResolverRecord {
   [resolve: string]: unknown
