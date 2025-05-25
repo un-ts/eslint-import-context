@@ -1,5 +1,11 @@
 # Change Log
 
+## 0.1.4
+
+### Patch Changes
+
+- [#10](https://github.com/un-ts/eslint-import-context/pull/10) [`98321c4`](https://github.com/un-ts/eslint-import-context/commit/98321c4b44a5c4639e649954ae5b2d2bb8b5bf4d) Thanks [@JounQin](https://github.com/JounQin)! - fix: add missing (peer)Dependencies
+
 ## 0.1.3
 
 ### Patch Changes
