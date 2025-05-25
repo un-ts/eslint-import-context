@@ -36,11 +36,23 @@
     "lint:style": "stylelint . --cache",
     "lint:tsc": "tsc -p tsconfig.base.json --noEmit",
     "prepare": "simple-git-hooks && yarn-berry-deduplicate || exit 0",
-    "release": "yarn build && clean-pkg-json && changeset publish",
+    "release": "clean-pkg-json && changeset publish",
     "serve": "vite preview",
     "test": "vitest run",
-    "typecov": "type-coverage -p tsconfig.base.json ",
+    "typecov": "type-coverage -p tsconfig.base.json",
     "version": "changeset version && yarn --no-immutable"
+  },
+  "peerDependencies": {
+    "unrs-resolver": "^1.0.0"
+  },
+  "peerDependenciesMeta": {
+    "unrs-resolver": {
+      "optional": true
+    }
+  },
+  "dependencies": {
+    "get-tsconfig": "^4.10.1",
+    "stable-hash": "^0.0.5"
   },
   "devDependencies": {
     "@1stg/browserslist-config": "^2.1.4",
@@ -64,6 +76,7 @@
     "@vitest/eslint-plugin": "^1.2.1",
     "clean-pkg-json": "^1.3.0",
     "eslint": "^9.27.0",
+    "eslint-import-context": "link:.",
     "eslint-plugin-react-hooks": "^5.2.0",
     "github-markdown-css": "^5.8.1",
     "nano-staged": "^0.8.0",
@@ -81,6 +94,7 @@
     "stylelint": "^16.19.1",
     "type-coverage": "^2.29.7",
     "typescript": "^5.8.3",
+    "unrs-resolver": "^1.7.2",
     "vite": "^6.3.5",
     "vitest": "^3.1.4",
     "yarn-berry-deduplicate": "^6.1.3"
