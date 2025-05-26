@@ -1,5 +1,11 @@
 # Change Log
 
+## 0.1.5
+
+### Patch Changes
+
+- [#13](https://github.com/un-ts/eslint-import-context/pull/13) [`07dd8a1`](https://github.com/un-ts/eslint-import-context/commit/07dd8a15f8f115b7eef2ce27ce70bc0f67408143) Thanks [@JounQin](https://github.com/JounQin)! - fix: disable `importHelpers` to drop `tslib` dependency
+
 ## 0.1.4
 
 ### Patch Changes
