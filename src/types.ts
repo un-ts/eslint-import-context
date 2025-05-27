@@ -37,10 +37,45 @@ export type Resolver = LegacyResolver | NewResolver
 
 export type ResolvedResult = ResultFound | ResultNotFound
 
-export interface NodeResolverOptions {
-  extensions?: readonly string[]
-  moduleDirectory?: string[]
-  paths?: string[]
+// based on https://github.com/DefinitelyTyped/DefinitelyTyped/blob/157f2565d64cbc03165a2284bf0e5176af18d991/types/resolve/index.d.ts#L93-L122
+export interface NodeResolverOptions
+  extends Omit<NapiResolveOptions, 'extensions'> {
+  /** Directory to begin resolving from (defaults to __dirname) */
+  basedir?: string
+  /** Set to false to exclude node core modules (e.g. fs) from the search */
+  includeCoreModules?: boolean
+  /** Array of file extensions to search in order (defaults to ['.js']) */
+  extensions?: string | readonly string[]
+  /**
+   * Require.paths array to use if nothing is found on the normal node_modules
+   * recursive walk (probably don't use this)
+   */
+  paths?: string | readonly string[]
+  /**
+   * Directory (or directories) in which to recursively look for modules.
+   * (default to 'node_modules')
+   */
+  moduleDirectory?: string | readonly string[]
+  /**
+   * If true, doesn't resolve `basedir` to real path before resolving. This is
+   * the way Node resolves dependencies when executed with the
+   * --preserve-symlinks flag.
+   *
+   * Note: this property is currently true by default but it will be changed to
+   * false in the next major version because Node's resolution algorithm does
+   * not preserve symlinks by default.
+   */
+  preserveSymlinks?: boolean
+
+  // The following options are not supported anymore, but kept for compatibility
+  /** @deprecated */
+  package?: unknown
+  /** @deprecated */
+  packageFilter?: unknown
+  /** @deprecated */
+  pathFilter?: unknown
+  /** @deprecated */
+  packageIterator?: unknown
 }
 
 export interface WebpackResolverOptions {
@@ -126,7 +161,7 @@ export interface LegacyResolverRecord {
   [resolve: string]: unknown
   node?: NodeResolverOptions | boolean
   typescript?: TsResolverOptions | boolean
-  webpack?: WebpackResolverOptions
+  webpack?: WebpackResolverOptions | boolean
 }
 
 export type LegacyImportResolver =
