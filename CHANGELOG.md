@@ -1,5 +1,11 @@
 # Change Log
 
+## 0.1.6
+
+### Patch Changes
+
+- [#15](https://github.com/un-ts/eslint-import-context/pull/15) [`71ca774`](https://github.com/un-ts/eslint-import-context/commit/71ca774528129bd4b447733ee90fea33ee26758d) Thanks [@JounQin](https://github.com/JounQin)! - fix(types): incorrect and unfinished `NodeResolverOptions` typing
+
 ## 0.1.5
 
 ### Patch Changes
