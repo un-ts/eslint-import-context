@@ -1,5 +1,11 @@
 # Change Log
 
+## 0.1.7
+
+### Patch Changes
+
+- [#17](https://github.com/un-ts/eslint-import-context/pull/17) [`b610b6c`](https://github.com/un-ts/eslint-import-context/commit/b610b6c3bd0c2ac86e962098343aaa7d3be7eabe) Thanks [@JounQin](https://github.com/JounQin)! - chore(deps): bump `stable-hash` to `v0.0.6`
+
 ## 0.1.6
 
 ### Patch Changes
