@@ -1,6 +1,6 @@
 {
   "name": "eslint-import-context",
-  "version": "0.1.6",
+  "version": "0.1.7",
   "type": "commonjs",
   "description": "Provide context info for eslint-plugin-import-x, so no extra arguments need to be added.",
   "repository": "git+https://github.com/un-ts/eslint-import-context.git",
