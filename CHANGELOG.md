@@ -1,5 +1,11 @@
 # Change Log
 
+## 0.1.8
+
+### Patch Changes
+
+- [#20](https://github.com/un-ts/eslint-import-context/pull/20) [`332afb7`](https://github.com/un-ts/eslint-import-context/commit/332afb70a9ce54766c4ace18d230dc3aba2830c1) Thanks [@JounQin](https://github.com/JounQin)! - chore: migrate `stable-hash` to `stable-hash-x`
+
 ## 0.1.7
 
 ### Patch Changes
