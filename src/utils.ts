@@ -2,7 +2,7 @@ import path from 'node:path'
 
 import { getTsconfig } from 'get-tsconfig'
 import type { TsConfigJsonResolved, TsConfigResult } from 'get-tsconfig'
-import { stableHash } from 'stable-hash'
+import { stableHash } from 'stable-hash-x'
 
 import type { ChildContext, RuleContext } from './types.js'
 
