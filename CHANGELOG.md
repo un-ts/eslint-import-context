@@ -1,5 +1,11 @@
 # Change Log
 
+## 0.1.9
+
+### Patch Changes
+
+- [#23](https://github.com/un-ts/eslint-import-context/pull/23) [`1eb17f6`](https://github.com/un-ts/eslint-import-context/commit/1eb17f68300118c47cb1d772a1e2bbbdb0b073be) Thanks [@renovate](https://github.com/apps/renovate)! - chore(deps): update `stable-hash-x` v0.2
+
 ## 0.1.8
 
 ### Patch Changes
