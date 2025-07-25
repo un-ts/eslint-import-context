@@ -51,8 +51,10 @@
     }
   },
   "dependencies": {
+    "@typescript-eslint/utils": "^8.34.0",
     "get-tsconfig": "^4.10.1",
-    "stable-hash-x": "^0.2.0"
+    "stable-hash-x": "^0.2.0",
+    "type-fest": "^4.39.1"
   },
   "devDependencies": {
     "@1stg/browserslist-config": "^2.1.4",

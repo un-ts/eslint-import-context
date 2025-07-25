@@ -7131,6 +7131,7 @@ __metadata:
     "@types/react": "npm:^19.1.8"
     "@types/react-dom": "npm:^19.1.6"
     "@types/web": "npm:^0.0.243"
+    "@typescript-eslint/utils": "npm:^8.34.0"
     "@vercel/analytics": "npm:^1.5.0"
     "@vitejs/plugin-react-swc": "npm:^3.10.2"
     "@vitest/coverage-v8": "npm:^3.2.4"
@@ -7156,6 +7157,7 @@ __metadata:
     stable-hash-x: "npm:^0.2.0"
     stylelint: "npm:^16.21.0"
     type-coverage: "npm:^2.29.7"
+    type-fest: "npm:^4.39.1"
     typescript: "npm:^5.8.3"
     unrs-resolver: "npm:^1.9.2"
     vite: "npm:^7.0.0"
@@ -15977,7 +15979,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"type-fest@npm:4.39.1":
+"type-fest@npm:4.39.1, type-fest@npm:^4.39.1":
   version: 4.39.1
   resolution: "type-fest@npm:4.39.1"
   checksum: 10c0/f5bf302eb2e2f70658be1757aa578f4a09da3f65699b0b12b7ae5502ccea76e5124521a6e6b69540f442c3dc924c394202a2ab58718d0582725c7ac23c072594
