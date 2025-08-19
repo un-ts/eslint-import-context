@@ -1,6 +1,6 @@
 import type { TSESLint } from '@typescript-eslint/utils'
+import type { NapiResolveOptions } from 'oxc-resolver'
 import type { KebabCase, LiteralUnion } from 'type-fest'
-import type { NapiResolveOptions } from 'unrs-resolver'
 
 import type { PluginName } from './utils.js'
 
