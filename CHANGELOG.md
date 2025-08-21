@@ -1,5 +1,11 @@
 # Change Log
 
+## 0.2.0
+
+### Minor Changes
+
+- [#27](https://github.com/un-ts/eslint-import-context/pull/27) [`8efd302`](https://github.com/un-ts/eslint-import-context/commit/8efd3023e615878cf817b8ebc7fd0f407164ebb7) Thanks [@JounQin](https://github.com/JounQin)! - chore(deps): migrate unrs-resolver to new oxc-resolver
+
 ## 0.1.9
 
 ### Patch Changes
