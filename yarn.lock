@@ -4635,7 +4635,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@typescript-eslint/utils@npm:8.40.0, @typescript-eslint/utils@npm:^8.24.1, @typescript-eslint/utils@npm:^8.39.1":
+"@typescript-eslint/utils@npm:8.40.0, @typescript-eslint/utils@npm:^8.24.1, @typescript-eslint/utils@npm:^8.34.0, @typescript-eslint/utils@npm:^8.39.1":
   version: 8.40.0
   resolution: "@typescript-eslint/utils@npm:8.40.0"
   dependencies:
@@ -7297,6 +7297,7 @@ __metadata:
     "@types/react": "npm:^19.1.10"
     "@types/react-dom": "npm:^19.1.7"
     "@types/web": "npm:^0.0.262"
+    "@typescript-eslint/utils": "npm:^8.34.0"
     "@vercel/analytics": "npm:^1.5.0"
     "@vitejs/plugin-react-swc": "npm:^4.0.1"
     "@vitest/coverage-v8": "npm:^3.2.4"
