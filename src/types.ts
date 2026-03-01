@@ -38,8 +38,10 @@ export type Resolver = LegacyResolver | NewResolver
 export type ResolvedResult = ResultFound | ResultNotFound
 
 // based on https://github.com/DefinitelyTyped/DefinitelyTyped/blob/157f2565d64cbc03165a2284bf0e5176af18d991/types/resolve/index.d.ts#L93-L122
-export interface NodeResolverOptions
-  extends Omit<NapiResolveOptions, 'extensions'> {
+export interface NodeResolverOptions extends Omit<
+  NapiResolveOptions,
+  'extensions'
+> {
   /** Directory to begin resolving from (defaults to __dirname) */
   basedir?: string
   /** Set to false to exclude node core modules (e.g. fs) from the search */
